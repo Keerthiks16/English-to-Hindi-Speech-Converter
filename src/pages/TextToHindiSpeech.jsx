@@ -230,7 +230,7 @@ const TextToHindiSpeech = ({
   return (
     <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
       <h2 className="text-lg font-semibold mb-4 text-green-300">
-        Hindi Speech & Download
+        Hindi Speech Generation
       </h2>
 
       {hindiText ? (
@@ -343,10 +343,7 @@ const TextToHindiSpeech = ({
           </button>
         </div>
       ) : (
-        <div className="text-center py-8 text-gray-400">
-          <p>Hindi translation will appear here</p>
-          <p className="text-sm mt-2">Upload audio and translate to continue</p>
-        </div>
+        <div></div>
       )}
     </div>
   );

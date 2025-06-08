@@ -157,7 +157,7 @@ const TranslationToHindi = ({
       {hindiText && !isConverting && (
         <div className="space-y-4">
           <div>
-            <h3 className="text-sm font-medium text-gray-300 mb-2">
+            <h3 className="text-sm font-medium text-gray-300 mb-2 mt-4">
               Hindi Translation:
             </h3>
             <div className="bg-gray-700 p-4 rounded-lg max-h-40 overflow-y-auto">
