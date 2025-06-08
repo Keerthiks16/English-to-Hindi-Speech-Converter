@@ -1,0 +1,85 @@
+/* Wave animation for upload */
+.wave-container {
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.wave-bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #00d4ff, #0099cc);
+  transform-origin: left;
+  transform: scaleX(calc(var(--progress) / 100));
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Conversion wave animation */
+.conversion-wave {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.wave-orange {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b35, #ff8e53);
+  opacity: 0.6;
+  animation: wave-animation 3s linear infinite;
+}
+
+.wave-orange.delay-1 {
+  animation-delay: 0.5s;
+  opacity: 0.4;
+}
+
+.wave-orange.delay-2 {
+  animation-delay: 1s;
+  opacity: 0.2;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Audio player styling */
+audio {
+  filter: invert(0.8);
+  width: 100%;
+  height: 40px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Devanagari font support */
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap"); */
