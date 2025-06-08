@@ -11,7 +11,7 @@ const TranslationToHindi = ({
   const [isConverting, setIsConverting] = useState(false);
 
   // Translate text to Hindi
-  const TranslateToHindi = async (text) => {
+  const translateToHindi = async (text) => {
     if (!text.trim()) return;
 
     setIsTranslating(true);

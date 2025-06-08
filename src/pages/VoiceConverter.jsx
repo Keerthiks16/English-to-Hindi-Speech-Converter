@@ -4,7 +4,6 @@ import TranslationToHindi from "./TranslationToHindi";
 import TextToHindiSpeech from "./TextToHindiSpeech";
 
 const VoiceConverter = () => {
-  // Global state management
   const [transcribedText, setTranscribedText] = useState("");
   const [hindiText, setHindiText] = useState("");
   const [audioFileName, setAudioFileName] = useState("");
