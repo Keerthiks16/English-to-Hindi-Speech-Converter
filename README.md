@@ -171,11 +171,3 @@ src/
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 
 
-If you encounter any issues or have questions:
-1. Check the troubleshooting section above
-2. Search existing [GitHub Issues](https://github.com/keerthiks16/english-to-hindi-speech-converter/issues)
-3. Create a new issue with detailed description
-
----
-
-Built with ❤️ by [Keerthi KS](https://github.com/keerthiks16)
